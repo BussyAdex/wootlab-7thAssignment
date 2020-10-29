@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BussyDice Roll Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.0-web/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="dice-container">
+        <div class="playerName">
+            <h1></h1>
+        </div>
+        <div class="radDiceValue">
+            <h3 id="radDiceNum"></h3>
+        </div>
+        <div class="diceImg">
+            <img style="height: 210px; width: 315px;" src="" alt="" id="imageDice">
+        </div>
+        <div class="totalSorce">
+            <p>TOTAL SCORE</p>
+            <h4 id="totalCount"></h4>
+        </div>
+        <div class="button-session">
+            <div class="rollDice">
+                <button type="button" class="btn btn-success" id="rollButton">ROLL DICE</button>
+            </div>
+            <div class="reset">
+                <button type="button" class="btn btn-danger" id="resetButton">RESET GAME</button>
+            </div>
+        </div>
+        <div class="result-session">
+            <div class="winResult">
+                <h4>RESULT</h4>
+                <p>Congratulations!!!</p>
+                <h2>YOU WON</h2>
+                <p id="resultID-1"></p>
+            </div>
+
+            <div class="loseResult">
+                <h4>RESULT</h4>
+                <p>Whoops!!!</p>
+                <h2>YOU LOST</h2>
+                <p id="resultID-2"></p>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script/jquery/jquery-3-5-1.js"></script>
+    <script src="css/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="script/sweetalert.min.js"></script>
+    <script src="script/script.js" charset="uth"></script>
+</body>
+</html>

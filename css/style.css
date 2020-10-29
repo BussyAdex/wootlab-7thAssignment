@@ -1,0 +1,101 @@
+@import url(fontawesome-free-5.15.0-web/css/all.css);
+
+:root {
+    --primary-font: "Source Sans Pro", sans-serif;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-darkblue: #081036;
+    --color-blue: #504ebb;
+    --color-gold: #f3d00a;
+    --color-red: hsl(0, 92%, 50%);
+    }
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.dice-container {
+    margin:  0;
+    padding: 10px;
+    height: 100vh;
+    background-image: linear-gradient(to right, var(--color-blue) , var(--color-darkblue));
+}
+
+.playerName {
+    margin: 10px 300px 40px 300px;
+    text-align: center;
+    padding: 10px;
+    height: 30px;
+    color: var(--color-white);
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    letter-spacing: 5px
+}
+.radDiceValue {
+    margin: 20px 700px 0 700px;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    color: var(--color-gold);
+    font-family: var(--primary-font);
+    font-size: 100px;
+    background-color: darkgray;
+    border-radius: 50%;
+}
+.diceImg {
+    margin: 10px 600px;
+    padding-top: 10px;
+    width: 300px;
+    height: 220px;
+}
+.totalSorce {
+    margin: 30px 600px 0 600px;
+    text-align: center;
+    font-family: var(--primary-font);
+    background-color: bisque;
+    
+}
+.totalSorce p{
+    font-size: 20px;
+    color: var(--color-red);
+}
+.totalSorce h4{
+    font-size: 20px;
+    color: var(--color-black);
+    font-weight: bolder;
+}
+.button-session{
+    margin: 30px 400px 0 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.result-session{
+    margin: 10px 450px 10px 530px;
+    padding-bottom: 20px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: aliceblue;
+    height: 150px;
+    width: 450px;
+    position: relative;
+}
+.winResult{
+    position: absolute;
+    text-align: center;
+    font-family: var(--primary-font);
+}
+.winResult h2{
+    color: forestgreen;
+}
+.loseResult{
+    position: absolute;
+    text-align: center;
+    font-family: var(--primary-font);
+}
+.loseResult h2{
+    color: red;
+}
